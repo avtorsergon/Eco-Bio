@@ -1,5 +1,83 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fff3cd;
+    color: #333; /* Улучшает читаемость */
+    line-height: 1.6; /* Улучшает расстояние между строками */
+}
+
+/* Хедер */
+header {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 🔹 Переключатель языка */
+.language-switcher {
+    display: flex;
+    gap: 10px;
+}
+
+.language-switcher a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.language-switcher a:hover {
+    background-color: white;
+    color: #00796b;
+}
+
+/* Контент */
+.banner {
     text-align: center;
-    background-color: #f4f4f4;
+    padding: 50px;
+    background: url('../assets/header-image.jpg') no-repeat center/cover;
+    color: white;
+}
+
+/* Футер */
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
 }
